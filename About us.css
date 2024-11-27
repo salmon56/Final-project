@@ -1,0 +1,115 @@
+.about-us {
+    padding: 50px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #f4b601;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+}
+/* Services Section */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #333;
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    width: 22%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    font-size: 18px;
+    color: #f4b601;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #666;
+}
+/* Workflow Section */
+.workflow {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.workflow h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.workflow-steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 22%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.step h3 {
+    font-size: 18px;
+    color: #f4b601;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #666;
+}

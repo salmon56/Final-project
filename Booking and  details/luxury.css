@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:#b2ad7f;
+    color:white;
+    padding: 20px;
+}
+
+/* Center the content */
+p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+/* Booking Form Styles */
+.booking-form {
+    background-color:#7e4a35;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto; /* Centering the form */
+    display: grid;
+    gap: 15px;
+}
+
+.booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.booking-form .search-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form .search-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #333; 
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-form {
+        width: 90%;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

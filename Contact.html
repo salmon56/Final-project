@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Contact Info Section -->
+        <div class="row contact-info justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="row">
+                    <!-- Address -->
+                    <div class="col-md-4 text-center py-4">
+                        <div class="icon">
+                            <span class="icon-map-o"></span>
+                        </div>
+                        <p><strong>Address:</strong> hospital road , p.o box 721, murang'a</p>
+                    </div>
+                    <!-- Phone -->
+                    <div class="col-md-4 text-center py-4">
+                        <div class="icon">
+                            <span class="icon-mobile-phone"></span>
+                        </div>
+                        <p><strong>Phone:</strong> <a href="tel:+254716206134" aria-label="Call us at +254716206134">+254716206134</a></p>
+                    </div>
+                    <!-- Email -->
+                    <div class="col-md-4 text-center py-4">
+                        <div class="icon">
+                            <span class="icon-envelope-o"></span>
+                        </div>
+                        <p><strong>Email:</strong> <a href="mailto:public23@gmail.com" aria-label="Email us at Public23@gmail.com">Public23@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Contact Form Section -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <h2 class="text-center mb-4">If you have any questions,<br>please send us a message</h2>
+                <form action="#" method="POST" class="bg-light p-5 contact-form">
+                    <!-- Name -->
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" aria-label="Enter your name" required>
+                    </div>
+                    <!-- Email -->
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" aria-label="Enter your email address" required>
+                    </div>
+                    <!-- Subject -->
+                    <div class="form-group">
+                        <input type="text" name="subject" class="form-control" placeholder="Subject" aria-label="Enter the subject of your message" required>
+                    </div>
+                    <!-- Message -->
+                    <div class="form-group">
+                        <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" aria-label="Enter your message" required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Google Maps Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div id="map" class="bg-white" style="position: relative; overflow: hidden; height: 400px;">
+                    <p class="text-center text-danger"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
