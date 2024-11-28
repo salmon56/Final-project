@@ -5,50 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Ride</title>
     <link rel="stylesheet" href="booking.css">
-</head>
+</head> 
 <body>
 
-    <header>
-        <h1>Book Your Ride</h1>
-    </header>
-
-    <main>
-        <h2>Booking for: 
-            <span id="vehicle-name"></span>
-        </h2>
-
+    <section class="booking-form">
+        <h2>Make your trip</h2>
         <form>
-            <label for="pickup-date">Pickup Date:</label>
-            <input type="date" id="pickup-date" name="pickup-date" required>
-
-            <label for="pickup-time">Pickup Time:</label>
-            <input type="time" id="pickup-time" name="pickup-time" required>
-
-            <label for="dropoff-date">Drop-off Date:</label>
-            <input type="date" id="dropoff-date" name="dropoff-date" required>
-
-            <label for="dropoff-time">Drop-off Time:</label>
-            <input type="time" id="dropoff-time" name="dropoff-time" required>
-
-            <button type="submit">Book Now</button>
+            <div class="form-group">
+                <label for="pickup-location">Pick-up Location</label>
+                <input type="text" id="pickup-location" placeholder="City, Airport, Station, etc." required>
+            </div>
+            <div class="form-group">
+                <label for="drop-off-location">Drop-off Location</label>
+                <input type="text" id="drop-off-location" placeholder="City, Airport, Station, etc." required>
+            </div>
+            <div class="form-group">
+                <label for="pickup-date">Pick-up Date</label>
+                <input type="date" id="pickup-date" required>
+            </div>
+            <div class="form-group">
+                <label for="drop-off-date">Drop-off Date</label>
+                <input type="date" id="drop-off-date" required>
+            </div>
+            <div class="form-group">
+                <label for="pickup-time">Pick-up Time</label>
+                <input type="time" id="pickup-time" required>
+            </div>
+            <button type="submit">Search Vehicle</button>
         </form>
-
-        <div id="vehicle-details"></div>
-    </main>
-
-    <script>
-        // Get the vehicle name from the URL query parameter
-        const urlParams = new URLSearchParams(window.location.search);
-        const vehicleName = urlParams.get('vehicle');
-
-        // Display the vehicle name on the page
-        const vehicleNameElement = document.getElementById('vehicle-name');
-        vehicleNameElement.textContent = vehicleName;
-
-        // Fetch vehicle details from a server or database based on the vehicle name
-        // and display them in the 'vehicle-details' div
-        // ... (JavaScript code to fetch and display details)
-    </script>
+    </section>
 
 </body>
-</html>
+</html> 
+ 

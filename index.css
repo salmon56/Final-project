@@ -7,17 +7,18 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 24px;
     line-height: 1.6;
-    color: #fff;
-    background-color: #333;
+    color:wheat;
+    /* background-image:url("picha zone/mathreenation.jpg") ; */
 }
 
 .hero-section {
-    background: url('picha.jpg') no-repeat center center/cover;
+    background: url('2.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 nav {
@@ -135,57 +136,44 @@ body {
     font-size: 14px;
     color: #666;
 }
-
-/* Booking Form Section */
-.booking-form {
-    background: #fff;
-    color: #333;
-    padding: 30px;
-    margin: -80px auto;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-}
-
-.booking-form h2 {
-    color: #f4b601;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 5px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 15px;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.form-group input {
-    width: 100%;
+/* Main Content */
+main {
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
+}
+
+main section {
+    flex: 1;
+    padding: 20px;
+    background-color:lightgrey;
     border-radius: 5px;
 }
 
-button[type="submit"] {
-    width: 100%;
-    background-color: #f4b601;
-    color: #fff;
-    padding: 15px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+main section h2 {
+    color: black;
+    margin-bottom: 10px;
 }
 
-button[type="submit"]:hover {
-    background-color: #d99a02;
+main section p {
+    color: black;
+    line-height: 1.6;
 }
 
+main section ul {
+    list-style: none;
+    padding: 0;
+}
+
+main section ul li {
+    margin-bottom: 10px;
+}
+
+main section ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+main section ul li a:hover {
+    color:black
+}

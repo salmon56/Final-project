@@ -1,8 +1,9 @@
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f8f9fa;
+  /* background-color: lightgray; */
   margin: 0;
   padding: 0;
+  background-color: gray;
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
 }
 
 .fleet-grid {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: space-between;

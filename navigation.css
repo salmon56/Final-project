@@ -1,0 +1,103 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #f9f9f9, #e8e8e8);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0066cc;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+h2 {
+    color: #004080;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0066cc;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #003366;
+    font-size: 1.4rem;
+    margin: 15px 0 5px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ol, ul {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+ol li, ul li {
+    margin-bottom: 10px;
+}
+
+.steps, .tips {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.steps ol {
+    list-style-type: decimal;
+    margin-top: 10px;
+}
+
+.steps li {
+    margin-bottom: 15px;
+}
+
+.tips ul {
+    list-style-type: square;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0066cc;
+    margin: 10px auto 0;
+}
+

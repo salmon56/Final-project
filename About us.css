@@ -1,6 +1,17 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us Section */
 .about-us {
     padding: 50px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
     color: #333;
     text-align: center;
 }
@@ -29,19 +40,12 @@
     margin-bottom: 15px;
     color: #555;
 }
+
 /* Services Section */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #fff;
-    background-color: #333;
-}
-
-
 .services {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .services h2 {
@@ -58,11 +62,17 @@ body {
 
 .service-item {
     width: 22%;
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .service-item h3 {
@@ -75,11 +85,12 @@ body {
     font-size: 14px;
     color: #666;
 }
+
 /* Workflow Section */
 .workflow {
     padding: 50px 20px;
     text-align: center;
-    background-color: #fff;
+    background-color: #f4f4f4;
 }
 
 .workflow h2 {
@@ -99,8 +110,15 @@ body {
     padding: 20px;
     margin: 10px;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .step h3 {
@@ -112,4 +130,9 @@ body {
 .step p {
     font-size: 14px;
     color: #666;
+}
+
+/* Utility: Text Centering */
+.text-center {
+    text-align: center;
 }
