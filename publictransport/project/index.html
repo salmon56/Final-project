@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Transport - Know Your Ride</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Form -->
+        <div id="loginContainer" class="login-container">
+            <div class="login-form">
+                <h2>Welcome to Public Transport</h2>
+                <form id="loginForm" onsubmit="return handleLogin(event)">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#" onclick="showRegister()">Register here</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div id="registerContainer" class="register-container hidden">
+            <div class="register-form">
+                <h2>Create Account</h2>
+                <form id="registerForm" onsubmit="return handleRegister(event)">
+                    <div class="form-group">
+                        <label for="regUsername">Username</label>
+                        <input type="text" id="regUsername" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <input type="email" id="regEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <input type="password" id="regPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="regConfirmPassword">Confirm Password</label>
+                        <input type="password" id="regConfirmPassword" required>
+                    </div>
+                    <button type="submit">Register</button>
+                    <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Main Content (Hidden initially) -->
+        <div id="mainContent" class="hidden">
+            <header class="hero-section">
+                <nav>
+                    <div class="logo">
+                        <h1>PUBLIC<span class="highlight">TRANSPORT</span></h1>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#transport">Transport</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#" onclick="logout()" class="logout-btn">Logout</a></li>
+                    </ul>
+                </nav>
+                <div class="hero-content">
+                    <h1>Now It's Easy For You<br>To Know Your Ride</h1>
+                    <p>Public transportation offers a convenient and eco-friendly way to get around.<br>
+                       With regular maintenance and safety measures in place,<br>
+                       you can enjoy a safe journey while reducing your carbon footprint.</p>
+                </div>
+            </header>
+
+            <main>
+                <section id="transport" class="transport-section">
+                    <div class="container">
+                        <h2>Available Transport Options</h2>
+                        <div id="transportGrid" class="transport-grid">
+                            <!-- Transport cards will be dynamically populated -->
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="about-section">
+                    <div class="container">
+                        <h2>About Us</h2>
+                        <div class="about-content">
+                            <div class="about-text">
+                                <h3>Our Mission</h3>
+                                <p>We are dedicated to providing safe, reliable, and comfortable transportation services across the nation. Our commitment to excellence ensures that every journey is a pleasant experience.</p>
+                                
+                                <h3>Our Services</h3>
+                                <ul class="services-list">
+                                    <li><i class="fas fa-plane"></i> Air Travel - Domestic flights with luxury and economy options</li>
+                                    <li><i class="fas fa-train"></i> Railway Services - Modern trains connecting major cities</li>
+                                    <li><i class="fas fa-bus"></i> Road Transport - Comfortable buses for local and long-distance travel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact-section">
+                    <div class="container">
+                        <h2>Contact Us</h2>
+                        <div class="contact-grid">
+                            <div class="contact-info">
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Hospital Road, P.O Box 721, Murang'a</p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-phone"></i>
+                                    <p><a href="tel:+254716206134">+254 716 206 134</a></p>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <p><a href="mailto:kennethmacharia56@gmail.com">public23@gmail.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-grid">
+                        <div class="footer-section">
+                            <h3>About Us</h3>
+                            <p>Public transportation that's reliable, eco-friendly, and convenient for everyone.</p>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Quick Links</h3>
+                            <ul>
+                                <li><a href="#transport">Transport Options</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/kennah.tiktok.7" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/kennah_big_man?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://x.com/Kenneth27932952?t=diJUL7Lj9WIvIkWw0c45ig&s=08" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Public Transport. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/transport.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
